@@ -70,8 +70,8 @@ app.post('/collect', function(req, res){
         cm2:    emojiCount,
         cm3:    exclaCount,
     //  note we’re skipping CM4
-        cm5:    elipseCount,
-        cm6:    questionMark, //need to set up in GA
+        //cm5:    elipseCount,
+      //  cm6:    questionMark, //need to set up in GA
         t:  "event",
         ec:     "slack: "+ channel.name + "|" + channel.id,
         ea:     "post by " + user.id,
