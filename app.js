@@ -64,7 +64,7 @@ app.post('/collect', function(req, res){
 	//Structure Data
 	var data = {
 		v: 		1,
-		tid: 	env_var.ga_key,
+		tid: 	env_var.UA-88852239-2,
 		cid: 	user.id,
 		ds:  	"slack", //data source
 		cs: 	"slack", // campaign source
