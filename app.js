@@ -59,7 +59,7 @@ app.post('/collect', function(req, res){
     //before it is sent to the GA servers for us to analyse at a later time.
     var data = {
         v:      1,
-        tid:    "UA-88852239-2", // <-- ADD UA NUMBER
+        tid:    "UA-88852239-1", // <-- ADD UA NUMBER
         cid:    user.id,
         ds:     "slack", //data source
         cs:     "slack", // campaign source
@@ -86,7 +86,7 @@ app.post('/collect', function(req, res){
         console.log(error);
     })
 });
- 
+
 //Start Server
 app.listen(port, function () {
     console.log('Listening on port ' + port);
