@@ -1,3 +1,5 @@
+*/
+
 //Setup Requirements
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -59,7 +61,7 @@ app.post('/collect', function(req, res){
     //before it is sent to the GA servers for us to analyse at a later time.
     var data = {
         v:      1,
-        tid:    "UA-88852239-1", // <-- ADD UA NUMBER
+        tid:    "UA-XXXXXXX-1", // <-- ADD UA NUMBER
         cid:    user.id,
         ds:     "slack", //data source
         cs:     "slack", // campaign source
@@ -70,8 +72,8 @@ app.post('/collect', function(req, res){
         cm2:    emojiCount,
         cm3:    exclaCount,
     //  note we’re skipping CM4
-        //cm5:    elipseCount,
-      //  cm6:    questionMark, //need to set up in GA
+        cm5:    elipseCount,
+        cm6:    questionMark, //need to set up in GA
         t:  "event",
         ec:     "slack: "+ channel.name + "|" + channel.id,
         ea:     "post by " + user.id,
